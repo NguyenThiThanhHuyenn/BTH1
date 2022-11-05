@@ -35,6 +35,7 @@
             this.txtB = new System.Windows.Forms.TextBox();
             this.lbResult = new System.Windows.Forms.Label();
             this.btAdd = new System.Windows.Forms.Button();
+            this.btDivide = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -105,7 +106,7 @@
             // btAdd
             // 
             this.btAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btAdd.Location = new System.Drawing.Point(612, 304);
+            this.btAdd.Location = new System.Drawing.Point(491, 265);
             this.btAdd.Name = "btAdd";
             this.btAdd.Size = new System.Drawing.Size(113, 65);
             this.btAdd.TabIndex = 6;
@@ -113,11 +114,23 @@
             this.btAdd.UseVisualStyleBackColor = true;
             this.btAdd.Click += new System.EventHandler(this.btAdd_Click);
             // 
+            // btDivide
+            // 
+            this.btDivide.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btDivide.Location = new System.Drawing.Point(659, 265);
+            this.btDivide.Name = "btDivide";
+            this.btDivide.Size = new System.Drawing.Size(113, 65);
+            this.btDivide.TabIndex = 7;
+            this.btDivide.Text = "Tru";
+            this.btDivide.UseVisualStyleBackColor = true;
+            this.btDivide.Click += new System.EventHandler(this.btDivide_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btDivide);
             this.Controls.Add(this.btAdd);
             this.Controls.Add(this.lbResult);
             this.Controls.Add(this.txtB);
@@ -142,6 +155,7 @@
         private System.Windows.Forms.TextBox txtB;
         private System.Windows.Forms.Label lbResult;
         private System.Windows.Forms.Button btAdd;
+        private System.Windows.Forms.Button btDivide;
     }
 }
 
